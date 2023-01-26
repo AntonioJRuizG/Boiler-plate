@@ -24,5 +24,13 @@
         ]
       }
     }
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntonioJRuizG/Boiler-plate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AntonioJRuizG/Boiler-plate/issues"
+  },
+  "homepage": "https://github.com/AntonioJRuizG/Boiler-plate#readme"
 }
