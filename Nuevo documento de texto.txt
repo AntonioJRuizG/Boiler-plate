@@ -1,0 +1,37 @@
+git init
+git commit -m "Initial commit"
+git add .
+crear repo remoto y lo enlazamos.
+instalar: eslint, jest, babel, prettier
+configurar las cosas.
+configurar eslint: npx eslint --init
+configurar eslint para que reconozca prettier. (poner prettier despues de xo en el eslintjson)
+
+
+configurar jest: jfconfig.json copiando del anterior poryecto. Esto ayuda a que al poner el punto después del expect, salga la lista de matches.
+En fichero .eslintrc.json añadir:
+```
+  "env": {
+    "jest": true
+  },
+```
+En package.json añadir 
+"type": "module",
+debajo de "main": "index.js",
+
+y añadir también
+```
+"scripts": {
+    "test": "jest"
+  },
+```
+
+Instalar husky con npx husky init: https://github.com/typicode/husky
+npm pkg set scripts.prepare="husky install"
+en package.json debe aparecer la dependencia husky y el script prepare;
+```
+"scripts": {
+    "test": "jest",
+    "prepare": "husky install"
+  },
+```
